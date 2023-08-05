@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     public void DestroyedEnemies(Vector3 spawn)
     {
         enemiesCount -= 1;
-        enemiesText.text = $"{structuresCount}";
+        enemiesText.text = $"{enemiesCount}";
         Instantiate(explotion, spawn, Quaternion.identity);
     }
 
